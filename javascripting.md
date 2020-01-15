@@ -47,6 +47,25 @@ float is like 3.14、1.5、100.78932
 
 ```js
 宣告方法：
-var example = 123;
-var example = 3.14;
+var integer = 123;
+var float = 3.14;
+```
+
+### 數字取整數
+除了基本的數學運算，比如 ＋，－，＊，/，和％
+複雜的數學運算可使用 Math Object
+
+```js
+var roundUp = 1.5;
+var rounded = Math.round(roundUp);
+console.log(rounded); => 2
+```
+
+### 數字轉字串
+可以使用 .toString() 方法。
+
+```js
+var n = 128;
+n = n.toString();
+console.log(n); => 128(string)
 ```
