@@ -10,9 +10,32 @@ console.log('hello');
 變數透過使用 var 及緊隨其後的變數名來宣告
 
 ```js
-e.g.
+例：
 var example;
 
 也可在宣告同時賦予值
 var example = 'some string';
+```
+
+# 字串(string)
+字串：被引號包裹起來的任意的值
+單引號或雙引號效果是一樣的
+```js
+'this is a string'
+"this is also a string"
+```
+
+### 字串長度
+可以使用 .length 來得到一個字串的長度
+```js
+var example = 'example string';
+console.lgo(exmple.length); => 14
+```
+
+### 修改字串
+可以使用 .replace() 取代字串中的內容
+```js
+var example = 'this example exists';
+example = example.replace('exists','is awesome');
+console.log(example);
 ```
