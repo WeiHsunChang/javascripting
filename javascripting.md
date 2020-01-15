@@ -69,3 +69,28 @@ var n = 128;
 n = n.toString();
 console.log(n); => 128(string)
 ```
+
+
+# IF條件式
+條件語句基於一個特定的布林（Boolean）值來改變程序的流程。 
+```js
+if (boolean) {  
+    //boolean為true時，則執行此處程式  
+}
+else {  
+    //boolean為false時，執行此處程式
+} 
+```
+
+例如
+```js
+var fruit = 'orange';
+var str_len = fruit.length;
+if(str_len>5){
+    console.log('The fruit name has more than five characters.');
+}
+else{
+    console.log('The fruit name has five characters or less.');
+}
+```
+
