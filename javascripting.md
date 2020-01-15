@@ -42,7 +42,7 @@ console.log(example);
 
 
 # 數字
-integer is like 2、14、4356、-32
+integer is like 2、14、4356、-32  
 float is like 3.14、1.5、100.78932
 
 ```js
@@ -52,7 +52,7 @@ var float = 3.14;
 ```
 
 ### 數字取整數
-除了基本的數學運算，比如 ＋，－，＊，/，和％
+除了基本的數學運算，比如 ＋，－，＊，/，和％  
 複雜的數學運算可使用 Math Object
 
 ```js
