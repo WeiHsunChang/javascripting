@@ -39,3 +39,14 @@ var example = 'this example exists';
 example = example.replace('exists','is awesome');
 console.log(example);
 ```
+
+
+# 數字
+integer is like 2、14、4356、-32
+float is like 3.14、1.5、100.78932
+
+```js
+宣告方法：
+var example = 123;
+var example = 3.14;
+```
