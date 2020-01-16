@@ -94,3 +94,15 @@ else{
 }
 ```
 
+# For 迴圈
+
+```js
+for (var i = 0; i < 10; i++) {  
+    // log the numbers 0 through 9  
+    console.log(i)  
+}
+
+透過 條件式 i < 10; 控制迴圈次數，條件式為true時迴圈才繼續被執行
+i++ 代表每次回圈結束後 i 的值加一
+```
+
