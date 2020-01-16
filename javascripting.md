@@ -122,3 +122,12 @@ var filtered = numbers.filter(function evenNumbers(number){
 console.log(filtered); => [2, 4, 6, 8, 10]
 ```
 
+### 存取陣列中的值
+
+陣列中的元素可以透過索引值(index)來訪問  
+index 就是一個 integer ，從0開始到陣列長度減一
+
+```js
+var numbers = [1, 2, 3];
+console.log(numbers[0]) => 1
+```
