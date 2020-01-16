@@ -193,3 +193,47 @@ function math(num1, num2, num3){
 呼叫函式時，需給相對應數量的參數
 console.log(math(53,61,67)); => 61 * 67 + 53 = 4140
 ```
+
+
+# 作用域
+```js
+var a = 4;    // a 是一個全域變數，它可以被下面的函式存取  
+function foo() {  
+    var b = a * 3;    
+    // b 不能夠在 foo 函式以外被存取，但是可以被定義於 foo 內部的其他函式存取  
+       
+    function bar(c) {  
+        var b = 2;  // 另一個新的 `b` 變數被建立在 bar 函式的作用域內  
+                    // 對這個新的 `b` 變數的改變並不會影響到舊的 `b` 變數  
+        console.log( a, b, c );  
+    }  
+       
+    bar(b * 4);  
+} 
+foo(); // 4, 2, 48  
+```   
+### 立即函式（IIFE, Immediately Invoked Function Expression）  
+IIFE : 用來建立區域作用域的常用方法。  
+```js
+(function(){ // 這個函式語法被一組小括號括起來  
+    // 在這裡定義的變數  
+    // 不能夠在這個函式外被存取  
+})(); // 這個函式立即被執行 
+
+例如：
+var a = 1, b = 2, c = 3;  
+(function firstFunction(){  
+    var b = 5, c = 6;  
+    (function secondFunction(){  
+        var b = 8;  
+        console.log("a: "+a+", b: "+b+", c: "+c); => a: 1, b: 8, c: 6
+        (function thirdFunction(){  
+            var a = 7, c = 9;  
+            (function fourthFunction(){  
+                var a = 1, c = 8;
+            })();  
+        })();  
+    })();  
+})();
+
+```
