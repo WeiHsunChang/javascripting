@@ -131,3 +131,13 @@ index 就是一個 integer ，從0開始到陣列長度減一
 var numbers = [1, 2, 3];
 console.log(numbers[0]) => 1
 ```
+
+### 以回圈存取陣列中的值
+
+```js
+var pets = ['cat', 'dog','rat'];
+for(var i=0; i<pets.length; i++){
+    pets[i] = pets[i] + 's';
+}
+console.log(pets); => ['cats', 'dogs', 'rats']
+```
