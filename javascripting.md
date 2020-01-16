@@ -141,3 +141,18 @@ for(var i=0; i<pets.length; i++){
 }
 console.log(pets); => ['cats', 'dogs', 'rats']
 ```
+
+
+# 物件(Object)
+物件像陣列一樣，也是一組值的集合，但不同的是，  
+物件裡的值(Value)被鍵（Key）所標識，而非整數。
+```js
+key : Value
+
+var pizza = {
+    toppings : ['cheese', 'sauce', 'pepperoni'], => Value 為 array
+    crust : 'deep dish', => Value 為 string
+    serves : 2 => Value 為 integer
+}
+```
+
