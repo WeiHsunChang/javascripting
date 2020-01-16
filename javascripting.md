@@ -153,6 +153,17 @@ var pizza = {
     toppings : ['cheese', 'sauce', 'pepperoni'], => Value 為 array
     crust : 'deep dish', => Value 為 string
     serves : 2 => Value 為 integer
-}
+};
 ```
 
+### 物件的屬性
+屬性：物件所包含的key和value的pair  
+操作屬性的方式與操作陣列類似
+```js
+var food = {
+    types : 'only pizza'
+};
+console.log(food.types); => only pizza
+console.log(food['types']) => only pizza
+使用中括號和點都可以獲得相同結果
+```
