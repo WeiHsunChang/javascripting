@@ -167,3 +167,17 @@ console.log(food.types); => only pizza
 console.log(food['types']) => only pizza
 使用中括號和點都可以獲得相同結果
 ```
+
+
+# 函式(Function)
+函式：一段程式碼，程式碼對輸入做處理，然後產生輸出
+
+```js
+function example(x){
+    return x * 2;
+}
+可以像下面這樣呼叫函式，得到數字 10;
+example(5)
+
+```
+
