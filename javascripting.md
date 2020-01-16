@@ -112,3 +112,13 @@ i++ 代表每次回圈結束後 i 的值加一
 var pet = ['cat', 'dog', 'rabbit'];
 ```
 
+### 陣列過濾
+使用 .filter() 方法可以達到過濾陣列的目的
+```js
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var filtered = numbers.filter(function evenNumbers(number){
+    return number % 2 == 0;
+})
+console.log(filtered); => [2, 4, 6, 8, 10]
+```
+
